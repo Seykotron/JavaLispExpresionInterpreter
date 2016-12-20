@@ -179,35 +179,60 @@ public class Jalei {
                 ob1 = getValor( operNombres.get(1) );
                 ob2 = getValor( operNombres.get(0) );
                 //Agrego el resultado a la pila
-                pila.add( (float) ob1 > (float) ob2 );
+                if( ob1.getClass() == Double.class ){
+                    pila.add( (Double) ob1 > (Double) ob2 );
+                }
+                else if( ob1.getClass() == Float.class ){
+                    pila.add( (Float) ob1 > (Float) ob2 );
+                }
                 break;
             case "<":
                 log( "Operando el < sobre "+operNombres.get(1)+" y "+operNombres.get(0) );
                 ob1 = getValor( operNombres.get(1) );
                 ob2 = getValor( operNombres.get(0) );
                 //Agrego el resultado a la pila
-                pila.add( (float) ob1 < (float) ob2 );
+                if( ob1.getClass() == Double.class ){
+                    pila.add( (Double) ob1 > (Double) ob2 );
+                }
+                else if( ob1.getClass() == Float.class ){
+                    pila.add( (Float) ob1 > (Float) ob2 );
+                }
                 break;
             case ">=":
                 log( "Operando el >= sobre "+operNombres.get(1)+" y "+operNombres.get(0) );
                 ob1 = getValor( operNombres.get(1) );
                 ob2 = getValor( operNombres.get(0) );
                 //Agrego el resultado a la pila
-                pila.add( (float) ob1 >= (float) ob2 );
+                if( ob1.getClass() == Double.class ){
+                    pila.add( (Double) ob1 > (Double) ob2 );
+                }
+                else if( ob1.getClass() == Float.class ){
+                    pila.add( (Float) ob1 > (Float) ob2 );
+                }
                 break;
             case "<=":
                 log( "Operando el <= sobre "+operNombres.get(1)+" y "+operNombres.get(0) );
                 ob1 = getValor( operNombres.get(1) );
                 ob2 = getValor( operNombres.get(0) );
                 //Agrego el resultado a la pila
-                pila.add( (float) ob1 <= (float) ob2 );
+                if( ob1.getClass() == Double.class ){
+                    pila.add( (Double) ob1 > (Double) ob2 );
+                }
+                else if( ob1.getClass() == Float.class ){
+                    pila.add( (Float) ob1 > (Float) ob2 );
+                }
                 break;
             case "==":
                 log( "Operando el == sobre "+operNombres.get(1)+" y "+operNombres.get(0) );
                 ob1 = getValor( operNombres.get(1) );
                 ob2 = getValor( operNombres.get(0) );
                 //Agrego el resultado a la pila
-                pila.add( (float) ob1 == (float) ob2 );
+                if( ob1.getClass() == Double.class ){
+                    pila.add( (Double) ob1 > (Double) ob2 );
+                }
+                else if( ob1.getClass() == Float.class ){
+                    pila.add( (Float) ob1 > (Float) ob2 );
+                }
                 break;
             /*
                 Agregar aquí el código si se agregan más operadores con nuevas entradas del case
